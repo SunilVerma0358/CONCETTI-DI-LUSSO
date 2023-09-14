@@ -106,6 +106,10 @@
     color: var(--white);
 }
 
+.dark_gray {
+    color: var(--dark_gray)
+}
+
 
 /* common_class */
 
@@ -146,6 +150,14 @@
     border: 2px solid transparent;
     background-color: var(--primery_red);
     color: var(--white);
+}
+
+.secondary_btn {
+    border-radius: 5px;
+    border: 2px solid transparent;
+    background-color: var(--dark_black);
+    color: var(--white);
+    padding: 8px 31px;
 }
 
 
@@ -270,6 +282,7 @@ nav ul li a:hover {
     border-radius: 5px;
     background-color: var(--white);
     color: var(--primery_red);
+    border: 2px solid transparent;
 }
 
 .min_vh_100 {
@@ -279,10 +292,65 @@ nav ul li a:hover {
 
 /* section */
 
-.bg_second_img {
-    height: 100%;
-    background-image: url('../imgaes/second_img_explorar.png');
-    border-radius: 48px;
+.lineing {
+    position: absolute;
+    top: 27%;
+    z-index: -1;
+}
+
+
+/* three-section */
+
+.card_box {
+    width: 100%;
+    box-shadow: 0px 0px 19px 0px #00000000;
+    border-radius: 10px;
+    padding: 23px 14px 32px 14px;
+    background-color: var(--white_dark);
+}
+
+.card_phara {
+    line-height: 21.79px;
+}
+
+.line_through {
+    text-decoration: line-through !important;
+}
+
+.mw_300 {
+    max-width: 300px;
+}
+
+.show_more_pad {
+    padding: 10px 28px;
+}
+
+.text_set {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    z-index: 2;
+}
+
+.explore_lh {
+    Line-height: 50.92px;
+}
+
+
+/* section_four */
+
+.card_three {
+    padding: 48px 30px 48px 27px;
+    background-color: var(--white_dark);
+    border-radius: 30px;
+}
+
+.card_phara_lh {
+    line-height: 23.15px;
+}
+
+.lh_phara_four {
+    line-height: 58.21px;
 }
 
 
@@ -331,6 +399,12 @@ nav ul li a:hover {
         line-height: 50px;
         max-width: 422px;
     }
+    .text_set {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        z-index: 2;
+    }
 }
 
 @media (min-width:768px) {
@@ -348,6 +422,15 @@ nav ul li a:hover {
         line-height: 60px;
         max-width: 422px;
     }
+    .text_set {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        z-index: 2;
+    }
+    .explore_lh {
+        Line-height: 57.92px;
+    }
 }
 
 @media (min-width:992px) {
@@ -358,10 +441,24 @@ nav ul li a:hover {
         line-height: 75px;
         max-width: 422px;
     }
+    .text_set {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        z-index: 2;
+    }
 }
 
 @media (min-width:1200px) {
     .min_vh_100 {
         min-height: 100vh;
+    }
+    .bg_second_img {
+        background-size: 100% 100%;
+        background-image: url('../imgaes/second_img_explorar.png');
+        border-radius: 48px;
+    }
+    .explore_lh {
+        Line-height: 67.92px;
     }
 }
