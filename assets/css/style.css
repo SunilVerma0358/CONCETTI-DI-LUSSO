@@ -219,6 +219,10 @@
     padding-right: 18px;
 }
 
+.pt_70 {
+    padding-top: 90px;
+}
+
 
 /* navbar */
 
@@ -231,7 +235,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 0.8px black;
 }
 
 .box_icon {
@@ -241,6 +245,14 @@ nav ul li a:hover {
     background-color: #fff;
     box-shadow: 0px 0px 10px 0px #00000017;
     padding: 10px 10px 10px 12px;
+}
+
+.img_scale {
+    transition: all linear 300ms;
+}
+
+.img_scale:hover {
+    transform: translateY(-20%);
 }
 
 
